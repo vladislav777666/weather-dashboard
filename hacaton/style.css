@@ -1,0 +1,132 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav a, nav button {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav a:hover, nav button:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    padding: 2rem;
+}
+
+/* Общие стили для секций */
+.section {
+    margin-bottom: 2rem;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Карточки погоды */
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.weather-card img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Скрытые элементы */
+.hidden {
+    display: none;
+}
+
+/* Аномалии */
+.anomaly {
+    color: red;
+    font-weight: bold;
+}
+
+/* Стили графиков */
+.chart {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Фон для разных типов погоды */
+.chart.sunny {
+    background-image: url('images/sunny.png');
+}
+
+.chart.cloudy {
+    background-image: url('images/cloudy.png');
+}
+
+.chart.rainy {
+    background-image: url('images/rainy.png');
+}
+
+.chart.snowy {
+    background-image: url('images/snowy.png');
+}
+
+.chart.storm {
+    background-image: url('images/storm.png');
+}
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* Размер логотипа */
+    height: 80px; /* Делает логотип квадратным */
+    object-fit: cover; /* Обеспечивает корректное обрезание изображения */
+    border-radius: 8px; /* Немного скругленные углы */
+}
